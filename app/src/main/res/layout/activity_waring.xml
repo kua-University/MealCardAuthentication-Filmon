@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutVertical1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center"
+        android:background="@drawable/bg_main_one" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutVertical2"
+            android:layout_width="match_parent"
+            android:layout_height="328dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="152dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/StudentFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="Filmon Ytbarek "
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/berlin_sans_fb_demi"
+                android:textColor="@color/dark_blue" />
+
+            <TextView
+                android:id="@+id/StudentID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:text="@string/ugr_178895_12"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:textColor="@color/gray" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/WaringLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/waring" />
+
+        <TextView
+            android:id="@+id/TextWaring"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="This user is not register as cafe"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:fontFamily="@font/berlin_sans_fb_demi"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_remark"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="New Scane"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/gray" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

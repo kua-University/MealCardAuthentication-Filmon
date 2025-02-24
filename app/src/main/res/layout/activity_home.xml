@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutVertical1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bg_main_one" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutVertical2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/UserImage"
+                android:layout_width="132dp"
+                android:layout_height="156dp"
+                android:layout_marginBottom="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/berlin_sans_fb_demi"
+                android:text="@string/filmon_ytbarek"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/UserRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/arial"
+                android:text="Cafe Manager"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutHorizontal1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/btn_rq"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_qr_code" />
+
+            <ImageView
+                android:id="@+id/btn_info"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_info" />
+
+            <ImageView
+                android:id="@+id/btn_logout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_close" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextFoter"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="One ID Digital Authentication for Cafe Meal Card – Powered by EITM School of Computing"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/light_orange1_bg"
+            android:fontFamily="@font/arial" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

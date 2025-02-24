@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutVertical1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center"
+        android:background="@drawable/bg_main_one" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutVertical2"
+            android:layout_width="match_parent"
+            android:layout_height="287dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutHorizontal1"
+                android:layout_width="match_parent"
+                android:layout_height="287dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/user" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutVertical3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="35dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/StudentFullName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/berlin_sans_fb_demi"
+                        android:text="@string/filmon_ytbarek"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/StudentID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arial"
+                        android:text="@string/ugr_178895_12"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/StudentDepartment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/arial"
+                        android:text="Department: Computing Department (EIT-M)"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/StudentProgram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arial"
+                        android:text="Program: Computer Science (Undergraduate Regular)"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutVertical4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutVertical5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TextBreakFast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lucida_fax"
+                    android:paddingLeft="40dp"
+                    android:text="Break Fast"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/cb_breakfast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:button="@drawable/custom_checkbox" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutVertical6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TextLunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lucida_fax"
+                    android:paddingLeft="40dp"
+                    android:text="Lunch"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/cb_lunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="163dp"
+                    android:button="@drawable/custom_checkbox" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutVertical7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TextDinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lucida_fax"
+                    android:paddingLeft="40dp"
+                    android:text="Dinner"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/cb_dinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="153dp"
+                    android:button="@drawable/custom_checkbox" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutHorizontal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/btn_check"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#000000"
+                    android:text="Check" />
+
+                <Button
+                    android:id="@+id/btn_uncheck"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/gray"
+                    android:text="Uncheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
